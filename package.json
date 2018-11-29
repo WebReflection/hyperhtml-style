@@ -1,5 +1,5 @@
 {
-  "name": "hyperstyle",
+  "name": "hyperhtml-style",
   "version": "0.1.0",
   "description": "The hyperHTML's html/svg style updater",
   "main": "cjs/index.js",
