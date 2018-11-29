@@ -1,0 +1,30 @@
+{
+  "name": "hyperstyle",
+  "version": "0.0.0",
+  "description": "The hyperHTML's html/svg style updated.",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "unpkg": "min.js",
+  "scripts": {
+    "build": "npm run cjs && npm run esm && npm run min && npm run test && npm run size",
+    "cjs": "cp index.js cjs/ && echo 'module.exports = hyperStyle;' >> cjs/index.js",
+    "esm": "cp index.js esm/ && echo 'export default hyperStyle;' >> esm/index.js",
+    "min": "uglifyjs index.js --support-ie8 --comments=/^!/ -c -m -o min.js",
+    "size": "cat index.js | wc -c && cat min.js | wc -c && gzip -c9 min.js | wc -c && cat min.js | brotli | wc -c",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "test": "istanbul cover test/index.js"
+  },
+  "keywords": [
+    "hyperhtml",
+    "style"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "devDependencies": {
+    "ascjs": "^2.5.1",
+    "basichtml": "^0.20.0",
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "uglifyjs": "^2.4.11"
+  }
+}
