@@ -23,6 +23,7 @@ bodyStyle({
 });
 
 console.log(document.body.style.cssText);
+
 // font-family: sans-serif;
 // font-size: 16px;
 // --cssProperty:value;
