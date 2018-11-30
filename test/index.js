@@ -39,4 +39,7 @@ function test() {
   update({fontFamily: 'sans-serif', '--property': 'value'});
   update(null);
   console.assert(!div.style.cssText.length);
+  update = hyperStyle(rect, rect.getAttributeNode('style'));
+  update('margin:0;');
+  console.log(rect.style.cssText);
 }
