@@ -1,6 +1,6 @@
 # hyperHTML Style
 
-[![Build Status](https://travis-ci.com/WebReflection/hyperhtml-style.svg?branch=master)](https://travis-ci.com/WebReflection/hyperhtml-style) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/hyperhtml-style/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/hyperhtml-style?branch=master) ![WebReflection status](https://offline.report/status/webreflection.svg)
+[![Build Status](https://travis-ci.com/WebReflection/hyperhtml-style.svg?branch=master)](https://travis-ci.com/WebReflection/hyperhtml-style) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/hyperhtml-style/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/hyperhtml-style?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/WebReflection/hyperhtml-style.svg)](https://greenkeeper.io/) ![WebReflection status](https://offline.report/status/webreflection.svg)
 
 The [hyperHTML](https://github.com/WebReflection/hyperHTML#hyperhtml)'s html/svg style updater.
 
