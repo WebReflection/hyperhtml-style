@@ -18,6 +18,8 @@ function test() {
   update({margin: 0});
   styles.push(div.style.cssText);
   update({fontFamily: 'sans-serif', '--property': 'value'});
+  update({"--property": 2})
+  console.assert(div.style['--property'] === 2);
   update(null);
   update(null);
   console.assert(!div.style.cssText.length);
